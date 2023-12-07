@@ -1,3 +1,4 @@
+//Person.js in model
 const mongoose = require('mongoose');
 
 const personSchema = new mongoose.Schema({
