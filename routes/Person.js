@@ -50,24 +50,7 @@ router.delete('/delete/:_id', async (req, res) => {
     }
 });
 
-//update
-{/*router.put('/update/:_id', async (req, res) => {
-    try {
-        const { name, age, favoriteFoods } = req.body;
-        const personToUpdate = await person.findById(req.params._id);
-
-        personToUpdate.name = name || personToUpdate.name;
-        personToUpdate.age = age || personToUpdate.age;
-        personToUpdate.favoriteFoods = favoriteFoods || personToUpdate.favoriteFoods;
-
-        await personToUpdate.save();
-        res.status(200).send({ msg: 'Person updated', updatedPerson: personToUpdate });
-    } catch (error) {
-        res.status(400).send({ msg: 'cant update person' });
-    }
-});*/}
-
-//update
+//edit
 router.put('/update/:_id', async (req, res) => {
     try {
         const {_id}=req.params ;
